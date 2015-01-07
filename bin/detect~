@@ -1,12 +1,12 @@
-#!usr/bin/bash
+#!/usr/bin/env bash
 #Detect file for c++ app
 #bin/detect/ <build_dir>
 BUILD_DIR=$1
-if [ -f $BUILD_DIR/Makefile ]
+if [ -f $1/Makefile ]
 then 
 	echo "GNU C++ "
 	exit 0
-elif [ -f $BUILD_DIR/makefile ]
+elif [ -f $1/makefile ]
 then 
 	echo "GNU C++ "
 	exit 0
